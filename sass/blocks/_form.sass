@@ -1,0 +1,95 @@
+.main
+  width: 665px
+  border: 1px solid #ff0000
+  transform: translate(50%,50%) //центруем форму по вертикали и горизонатли
+  display: flex
+  flex-direction: row //выстраиваем внутреннюю сетку в ряд (в котором 2 крупных блока)
+  &__signup
+    background-color: #5A61ED
+    width: 137px
+    padding: 22px 0 0 6px
+    writing-mode: vertical-lr //направляем текст так в макете (слева направо)
+    transform: rotate(180deg)
+  &-rightside
+    width: 528px
+    padding: 39px 22px 33px
+.title
+  color: #ffffff
+  font-family: "PT sans", sans-serif
+  font-weight: 500
+  font-size: 49px
+.form
+  &-regform
+    margin-bottom: 100px
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+  &-container
+    width: 485px
+    font-family: "Work Sans", sans-serif
+    display: flex
+    justify-content: space-between
+    flex-direction: column
+  &-title
+    width: 115px
+    max-width: 180px
+    font-weight: 500
+    font-size: 22px
+  &-subtitle
+    width: 285px
+    max-width: 285px
+    font-weight: 300
+    font-size: 14px
+    margin-bottom: 20px
+  &__male
+    
+  &__password
+    font-family: "PT sans", sans-serif
+    font-weight: 500
+    font-size: 16px
+  &__submit
+    display: inline-block
+    width: 154px
+    min-height: 32px
+    padding: 7px
+    font-size: 14px
+    background-color: #5A61ED
+    color: #ffffff
+    font-weight: 300
+    text-align: center
+    border: none
+    cursor: pointer
+    &-wrapper
+      display: flex
+      width: 100%
+      max-width: 485px
+      justify-content: space-between
+      align-items: center
+.warning
+  font-family: inherit
+  font-weight: 300
+  font-size: 13px
+  width: 150px
+  max-width: 150px
+.link
+  &-login
+    font-weight: 500
+    font-family: inherit
+    color: #5A61ED
+input
+  font-family: inherit
+  padding: 0
+  font-size: 14px
+  width: 235px
+  border: none
+  border-bottom: 1px solid #F2F2F2
+  outline: none
+label
+  max-width: 235px
+  color: #000000
+  font-weight: 300
+  font-size: 12px
+  margin-bottom: 16px
+  &:nth-child(7), &:nth-child(8) //отключение отступов для последних инпутов
+    margin-bottom: 0
+    

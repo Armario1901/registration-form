@@ -5,6 +5,9 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Registration Form</title>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link rel="stylesheet" href="./css/normalize.min.css" />
+
 		<link
 			href="https://fonts.googleapis.com/css?family=PT+Sans:regular,italic,700,700italic"
 			rel="stylesheet"
@@ -21,20 +24,71 @@
 			</div>
 			<div class="main-rightside">
 				<div class="form-container">
-					<h2>New user?</h2>
-					<h3>Use the form below to create your account.</h3>
-					<form action="#" class="regform">
-						<input type="text" class="form__name" />
-						<input type="text" class="form__surname" />
-						<input type="select" class="form__nationality" />
-						<input type="email" class="form__email" />
-						<input type="date" class="form__birthday" />
-						<input type="radio" class="form__male" />
-						<input type="password" class="form__password" />
-						<input type="password" class="form__password" />
+					<h2 class="form-title">New user?</h2>
+					<h3 class="form-subtitle">
+						Use the form below to create your account.
+					</h3>
+					<form action="#" class="form-regform" id="">
+						<label for="name" class="label">
+							First Name
+							<input type="text" class="form__name" id="name" />
+						</label>
+						<label for="surname" class="label">
+							Last Name
+							<input type="text" class="form__surname" id="surname" />
+						</label>
+						<label for="select" class="label">
+							Nationality
+							<input type="select" class="form__nationality" id="select" />
+						</label>
+						<label for="email" class="label">
+							E-mail
+							<input type="email" class="form__email" id="email" />
+						</label>
+						<label for="birthday" class="label">
+							Date of birth
+							<input type="date" class="form__birthday" id="birthday" />
+						</label>
+
+						<label for="male1" class="label">
+							Gender
+
+							<input
+								type="radio"
+								name="radio-btn"
+								class="form__male"
+								id="male1"
+							/>
+							<input
+								type="radio"
+								name="radio-btn"
+								class="form__male"
+								id="male2"
+                
+							/>
+						</label>
+						<label for="male2" class="label"> Gender </label>
+						<label for="password" class="label">
+							Password
+							<input type="password" class="form__password" id="password" />
+						</label>
+						<label for="password-confirm" class="label">
+							Password
+							<input
+								type="password"
+								class="form__password"
+								id="password-confirm"
+							/>
+						</label>
 					</form>
-          <span class="warning">Have an account? <a href="#" class="link-login">Login</a></span>
-          <input type="submit" class="form__submit" />
+
+					<div class="form__submit-wrapper">
+						<span class="warning"
+							>Have an account?
+							<a href="#" class="link-login">Login</a>
+						</span>
+						<input type="submit" class="form__submit" value="Complete Signup" />
+					</div>
 				</div>
 			</div>
 		</div>
